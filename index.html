@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap">
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="display">
+            <input type="text" placeholder="0" id="input" disabled />
+        </div>
+        <div class="buttons">
+            <input type="button" value="AC" onclick="clearInput()" />
+            <input type="button" value="DEL" onclick="appendToResult('DEL')" />
+            <input type="button" value="/"  onclick="appendToResult('/')"/>
+            <input type="button" value="*" onclick="appendToResult('*')"/>
+            <input type="button" value="7" onclick="appendToResult('7')"/>
+            <input type="button" value="8"  onclick="appendToResult('8')"/>
+            <input type="button" value="9" onclick="appendToResult('9')"/>
+            <input type="button" value="-" onclick="appendToResult('-')"/>
+
+            <input type="button" value="4" onclick="appendToResult('4')"/>
+            <input type="button" value="5"  onclick="appendToResult('5')"/>
+            <input type="button" value="6"  onclick="appendToResult('6')"/>
+            <input type="button" value="+" onclick="appendToResult('+')"/>
+
+            <input type="button" value="1" onclick="appendToResult('1')"/>
+            <input type="button" value="2" onclick="appendToResult('2')"/>
+            <input type="button" value="3"  onclick="appendToResult('3')"/>
+            <input type="button" value="=" onclick="calculatorInput()"/>
+            <input type="button" value="0"  onclick="appendToResult('0')"/>
+            <input type="button" value="."  onclick="appendToResult('.')"/>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
